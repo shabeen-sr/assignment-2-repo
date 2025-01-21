@@ -1,11 +1,13 @@
 /* styles.css */
 
 body{
+    max-width: 1440px;
     margin: 0 auto;
   }
   
-  /* shared styles */
-  .btn-primary{
+ /* shared styles */
+
+.btn-primary{
     border: none;
     background-color: orange;
     color: white;
@@ -13,84 +15,120 @@ body{
     border-radius: 12px;
     font-size: 20px;
     font-weight: 600;
-  }
+}
   
   
    /* navbar styles  */
   
-  .navbar{
+.navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: auto;
-  }
+}
     
-  .logo{
+.logo{
     display: flex;
     align-items: center;
   }
     
-  .logo-img{
+.logo-img{
     margin-right: 15px;
-  }
+}
     
-  .school{
+.school{
     font-size: 32px;
     font-weight: 700;
     color: black;
-  }
-    
-  .nav-links{
+}
+
+   
+.nav-links{
     list-style: none;
     display: flex;
     gap: 20px;
-  }
+}
     
-  .nav-links a{
+.nav-links a{
     text-decoration: none;
     font-weight: 700;
     font-size: 20px;
-  }
+}
   
   /* menu color styles */
   
-  .home{
+.home{
     color: rgba(0, 183, 255, 0.925);
-  }
-  .about{
+}
+.about{
     color: violet
-  }
-  .facilities{
-    color: brown;
-  }
-  .admission{
+}
+.facilities{
+    color: brown; 
+}
+.admission{
     color: tomato;
-  }
+}
     
   
     
   /* three-line menu styles */
    
-  .line{
+.line{
     width: 25px;
     height: 3px;
     background-color: #333232;
     margin-top: 4px;
     
-  }
+}
   
-  .three-line-menu{
+.three-line-menu{
     display: none;
      
-  }
+}
   
+  /* hero section */
+ 
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.hero-title{
+    margin-bottom: 10px;
+    font-size: 3.6rem;
+    font-weight: 700;
+
+    
+}
+.empowering{
+    color: #FEA301
+}
+.vision{
+    color: #01ACFD
+}
+
+.hero-description{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.hero-content {
+    max-width: 640px;
+}
+
+.section-image{
+    max-width: 468px;
+}
+
   
   /* Responsive styles */
   
-  @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   
   .nav-links, 
-  .btn-primary,
+  .contact-btn,
   .school{
     display: none;
   }
@@ -99,17 +137,37 @@ body{
     display: block;
     max-width: 46px;
     max-height: 46px;
+    padding-left: 16px;
   }
   
   .three-line-menu{
     display: block;
+    padding-right: 16px;
   }
   
   .navbar{
     padding: 20px;
     border-bottom: 1px solid #b69b00;
   }
+
+  .hero-section{
+    flex-direction: column-reverse;
+    text-align: center;   
+
+  }
+
+  .section-image{
+    padding-right: 50px;
+    max-width: 70%;
     
-  
-   }
-  
+  }
+  .hero-content{
+    max-width: 80%;
+  }
+
+
+
+
+
+ 
+}
